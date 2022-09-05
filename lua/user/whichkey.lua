@@ -84,26 +84,6 @@ local mappings = {
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
 
-  d = {
-    name = "Debugger",
-    c = { "<cmd>VimspectorContinue", "Start/Continue debugger" },
-    s = { "<cmd>VimspectorStop", "Stop debugging" },
-    r = { "<cmd>VimspectorRestart", "Restart debugger" },
-    p = { "<cmd>VimspectorPause", "Pause debugger" },
-    S = { "<cmd>VimspectorBreakpoints", "Show/hide breakpoints" },
-    d = { "<cmd>VimspectorToggleBreakpoint", "Toggle breakpoint on current line" },
-    C = { "<cmd>VimspectorToggleConditionalBreakpoint", "Toggle conditional line breakpoint" },
-    R = { "<cmd>VimspectorRunToCursor", "Run to cursor" },
-    o = { "<cmd>VimspectorStepOver", "Step over" },
-    i = { "<cmd>VimspectorStepInto", "Step into" },
-    O = { "<cmd>VimspectorStepOut", "Step out" },
-    U = { "<cmd>VimspectorUpFrame", "Move up a frame" },
-    D = { "<cmd>VimspectorDownFrame", "Move down a frame" },
-    n = { "<cmd>VimspectorJumpToNextBreakpoint", "Jump to next breakpoint" },
-    P = { "<cmd>VimspectorJumpToPreviousBreakpoint", "Jump to previous breakpoint" },
-    e = { "<cmd>VimspectorBalloonEval", "Evaluate expression" },
-  },
-
   f = {
     name = "Telescope",
     f = { "<cmd>lua require('telescope.builtin').find_files()<cr>", "Find Files" },
