@@ -81,10 +81,28 @@ local opts = {
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  ["w"] = { "<cmd>w!<CR>", "Save" },
-  ["q"] = { "<cmd>q!<CR>", "Quit" },
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+
+  d = {
+    name = "Debugger",
+    c = { "<cmd>VimspectorContinue", "Start/Continue debugger" },
+    s = { "<cmd>VimspectorStop", "Stop debugging" },
+    r = { "<cmd>VimspectorRestart", "Restart debugger" },
+    p = { "<cmd>VimspectorPause", "Pause debugger" },
+    S = { "<cmd>VimspectorBreakpoints", "Show/hide breakpoints" },
+    d = { "<cmd>VimspectorToggleBreakpoint", "Toggle breakpoint on current line" },
+    C = { "<cmd>VimspectorToggleConditionalBreakpoint", "Toggle conditional line breakpoint" },
+    R = { "<cmd>VimspectorRunToCursor", "Run to cursor" },
+    o = { "<cmd>VimspectorStepOver", "Step over" },
+    i = { "<cmd>VimspectorStepInto", "Step into" },
+    O = { "<cmd>VimspectorStepOut", "Step out" },
+    U = { "<cmd>VimspectorUpFrame", "Move up a frame" },
+    D = { "<cmd>VimspectorDownFrame", "Move down a frame" },
+    n = { "<cmd>VimspectorJumpToNextBreakpoint", "Jump to next breakpoint" },
+    P = { "<cmd>VimspectorJumpToPreviousBreakpoint", "Jump to previous breakpoint" },
+    e = { "<cmd>VimspectorBalloonEval", "Evaluate expression" },
+  },
 
   f = {
     name = "Telescope",
@@ -93,14 +111,6 @@ local mappings = {
     b = { "<cmd>lua require('telescope.builtin').buffers()<cr>", "Buffers" },
     h = { "<cmd>lua require('telescope.builtin').help_tags()<cr>", "Find Help" },
     p = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
-  },
-  p = {
-    name = "Packer",
-    c = { "<cmd>PackerCompile<cr>", "Compile" },
-    i = { "<cmd>PackerInstall<cr>", "Install" },
-    s = { "<cmd>PackerSync<cr>", "Sync" },
-    S = { "<cmd>PackerStatus<cr>", "Status" },
-    u = { "<cmd>PackerUpdate<cr>", "Update" },
   },
 
   g = {
@@ -149,6 +159,16 @@ local mappings = {
       "Workspace Symbols",
     },
   },
+
+  p = {
+    name = "Packer",
+    c = { "<cmd>PackerCompile<cr>", "Compile" },
+    i = { "<cmd>PackerInstall<cr>", "Install" },
+    s = { "<cmd>PackerSync<cr>", "Sync" },
+    S = { "<cmd>PackerStatus<cr>", "Status" },
+    u = { "<cmd>PackerUpdate<cr>", "Update" },
+  },
+
   s = {
     name = "Search",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
