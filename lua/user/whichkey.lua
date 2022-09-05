@@ -84,6 +84,20 @@ local mappings = {
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
 
+  d = {
+    name = "Debugger",
+    ["b"] = { "<cmd>lua require('dap').toggle_breakpoint()<cr>", "Toggle Breakpoint" },
+    ["B"] = { "<cmd>lua require('dap').toggle_breakpoint(vim.fn.input('Breakpoint condition: '))<cr>", "Toggle Breakpoint w Condition" },
+    ["<Home>"] = { "<cmd>lua require('dapui').open()<CR>", "Start debugger" },
+    ["<End>"] = { "<cmd>lua require('dapui').toggle(1)<CR>", "Toggle debugger" },
+    ["<leader>"] = { "<cmd>lua require('dapui').close()<CR>", "Close debugger" },
+    ["<Up>"] = { "<cmd>lua require('dap').continue()<CR>", "Continue" },
+    ["<Down>"] = { "<cmd>lua require('dap').step_over()<CR>", "Step Over" },
+    ["<Right>"] = { "<cmd>lua require('dap').step_into()<CR>", "Step Into" },
+    ["<Left>"] = { "<cmd>lua require('dap').step_out()<CR>", "Step Out" },
+    rc = { "<cmd>lua require('dap').run_to_cursor()<CR>", "Run to Cursor" },
+  },
+
   f = {
     name = "Telescope",
     f = { "<cmd>lua require('telescope.builtin').find_files()<cr>", "Find Files" },
