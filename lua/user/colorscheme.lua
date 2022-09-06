@@ -1,8 +1,8 @@
 vim.cmd [[
 try
-  colorscheme darkplus
+  colorscheme darcula-solid
+  set termguicolors
 catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default
-  set background=dark
+  colorscheme tokyonight-night
 endtry
 ]]
