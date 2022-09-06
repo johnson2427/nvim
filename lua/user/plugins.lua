@@ -62,6 +62,8 @@ return packer.startup(function(use)
   -- Colorschemes
   use({ "folke/tokyonight.nvim" })
   use("lunarvim/darkplus.nvim")
+  use { "rktjmp/lush.nvim" }
+  use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
 
   -- cmp plugins
   use({ "hrsh7th/nvim-cmp" }) -- The completion plugin
