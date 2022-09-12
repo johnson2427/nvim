@@ -64,6 +64,14 @@ Next we need to install python support (node is optional)
 
 **NOTE** make sure you have [node](https://nodejs.org/en/) installed, I recommend a node manager like [fnm](https://github.com/Schniz/fnm).
 
+### For Telescope to work
+
+- Neovim requires ripgrep for :Telescope live_grep to work.
+
+```bash
+sudo apt-get install ripgrep
+```
+
 ### Upgrade to latest release
 
 Assuming you [built from source](https://github.com/neovim/neovim/wiki/Building-Neovim#quick-start), `cd` into the folder where you cloned `neovim` and run the following commands. 
