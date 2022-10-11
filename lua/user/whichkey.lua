@@ -80,11 +80,10 @@ local opts = {
 
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-  ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
+  ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-  ["b"] = { "<cmd>lua require('dap').toggle_breakpoint()<CR>", "Toggle Breakpoint" },
-  ["B"] = { "<cmd>lua require('dap').toggle_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", "Toggle Breakpoint w Condition" },
+  ["q"] = { "<cmd>qa<CR>", "Quit" },
   f = {
     name = "Telescope",
     f = { "<cmd>lua require('telescope.builtin').find_files()<cr>", "Find Files" },

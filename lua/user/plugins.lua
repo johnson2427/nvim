@@ -85,17 +85,9 @@ return packer.startup(function(use)
 
   -- Telescope
   use({ "nvim-telescope/telescope.nvim", requires={ "nvim-lua/plenary.nvim" } })
-  -- use({ "nvim-telescope/telescope-fzf-native.nvim" })
-  -- use({ "BurntSushi/ripgrep" })
 
   -- Treesitter
   use({ "nvim-treesitter/nvim-treesitter" })
-
-  -- Debugger
-  use({ "mfussenegger/nvim-dap" })
-  use({ "rcarriga/nvim-dap-ui" })
-  use({ "theHamsta/nvim-dap-virtual-text" })
-  use( { "mfussenegger/nvim-dap-python" } )
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
