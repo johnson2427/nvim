@@ -63,10 +63,3 @@ keymap("n", "<Left>", ":lua require('dap').step_out()<CR>", opts)
 keymap("n", "<End>", ":lua require('dap').toggle(1)<CR>", opts)
 keymap("n", "<leader>rc", ":lua require('dap').run_to_cursor()<CR>", opts)
 
--- Terminal --
--- Better terminal navigation
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-

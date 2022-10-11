@@ -89,7 +89,7 @@ return packer.startup(function(use)
   -- use({ "BurntSushi/ripgrep" })
 
   -- Treesitter
-  use({ "nvim-treesitter/nvim-treesitter", commit = "5d11dfc27849e3d7435c32dbd8ea9be35bcd990b"})
+  use({ "nvim-treesitter/nvim-treesitter" })
 
   -- Debugger
   use({ "mfussenegger/nvim-dap" })

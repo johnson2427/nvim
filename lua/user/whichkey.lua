@@ -94,20 +94,6 @@ local mappings = {
     p = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   },
 
-  g = {
-    name = "Git",
-    g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
-    l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
-    s = { "<cmd>Telescope git_status<cr>", "Git Status" },
-    S = { "<cmd>Telescope git_stash", "Git Stash" },
-    b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-    c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
-    d = {
-      "<cmd>Gitsigns diffthis HEAD<cr>",
-      "Diff",
-    },
-  },
-
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
