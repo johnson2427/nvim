@@ -82,6 +82,7 @@ return packer.startup(function(use)
   use({ "williamboman/nvim-lsp-installer" }) -- simple to use language server installer
   use({ "jose-elias-alvarez/null-ls.nvim" }) -- for formatters and linters
   use({ "wesleimp/stylua.nvim" })
+  use({ "github/copilot.vim" })
 
   -- Telescope
   use({ "nvim-telescope/telescope.nvim", requires={ "nvim-lua/plenary.nvim" } })
