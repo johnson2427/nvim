@@ -79,6 +79,4 @@ dap.listeners.before.event_exited["dapui_config"] = function()
     dapui.close()
 end
 
-require("user.debugger.node");
-require("user.debugger.cpp");
-require("user.debugger.python");
+require("user.dap.python");

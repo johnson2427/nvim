@@ -1,4 +1,4 @@
-require "user.debugger"
+require "user.dap"
 require "user.lsp"
 require "user.alpha"
 require "user.autocommands"

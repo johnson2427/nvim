@@ -57,13 +57,13 @@ return packer.startup(function(use)
   use({ "lewis6991/impatient.nvim" })
   use({ "lukas-reineke/indent-blankline.nvim" })
   use({ "goolord/alpha-nvim" })
-  use("folke/which-key.nvim")
+  use({ "folke/which-key.nvim" })
 
   -- Colorschemes
   use({ "folke/tokyonight.nvim" })
-  use("lunarvim/darkplus.nvim")
-  use { "rktjmp/lush.nvim" }
-  use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
+  use({ "lunarvim/darkplus.nvim" })
+  use({ "rktjmp/lush.nvim" })
+  use({ "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" })
 
   -- cmp plugins
   use({ "hrsh7th/nvim-cmp" }) -- The completion plugin
@@ -88,6 +88,15 @@ return packer.startup(function(use)
 
   -- Treesitter
   use({ "nvim-treesitter/nvim-treesitter" })
+
+  -- Debugging
+  use({ "mfussenegger/nvim-dap" })
+  use({ "theHamsta/nvim-dap-virtual-text"})
+  use({ "rcarriga/nvim-dap-ui" })
+  use({ "mfussenegger/nvim-dap-python" })
+  use({ "nvim-telescope/telescope-dap.nvim" })
+  use({ "leoluz/nvim-dap-go", module = "dap-go" })
+  use({ "jbyuki/one-small-step-for-vimkind", module = "osv" })
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
