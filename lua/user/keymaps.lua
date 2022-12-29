@@ -20,10 +20,10 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+-- keymap("n", "<S-h>", "<C-w>h", opts)
+-- keymap("n", "<S-j>", "<C-w>j", opts)
+-- keymap("n", "<S-k>", "<C-w>k", opts)
+-- keymap("n", "<S-l>", "<C-w>l", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -53,13 +53,13 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Debugger
-keymap("n", "<Home>", ":lua require('dapui').open()<CR>", opts)
-keymap("n", "<End>", ":lua require('dapui').toggle(1)<CR>", opts)
-keymap("n", "<leader><End>", ":lua require('dapui').close()<CR>", opts)
-keymap("n", "<Right>", ":lua require('dap').continue()<CR>", opts)
-keymap("n", "<Up>", ":lua require('dap').step_over()<CR>", opts)
-keymap("n", "<Down>", ":lua require('dap').step_into()<CR>", opts)
-keymap("n", "<Left>", ":lua require('dap').step_out()<CR>", opts)
-keymap("n", "<End>", ":lua require('dap').toggle(1)<CR>", opts)
-keymap("n", "<leader>rc", ":lua require('dap').run_to_cursor()<CR>", opts)
+-- keymap("n", "<Home>", ":lua require('dapui').open()<CR>", opts)
+-- keymap("n", "<End>", ":lua require('dapui').toggle(1)<CR>", opts)
+-- keymap("n", "<leader><End>", ":lua require('dapui').close()<CR>", opts)
+-- keymap("n", "<Right>", ":lua require('dap').continue()<CR>", opts)
+-- keymap("n", "<Up>", ":lua require('dap').step_over()<CR>", opts)
+-- keymap("n", "<Down>", ":lua require('dap').step_into()<CR>", opts)
+-- keymap("n", "<Left>", ":lua require('dap').step_out()<CR>", opts)
+-- keymap("n", "<End>", ":lua require('dap').toggle(1)<CR>", opts)
+-- keymap("n", "<leader>rc", ":lua require('dap').run_to_cursor()<CR>", opts)
 

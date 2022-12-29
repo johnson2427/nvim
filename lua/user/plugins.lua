@@ -52,7 +52,6 @@ return packer.startup(function(use)
   use({ "akinsho/bufferline.nvim" })
   use({ "moll/vim-bbye" })
   use({ "nvim-lualine/lualine.nvim" })
-  use({ "akinsho/toggleterm.nvim" })
   use({ "ahmedkhalf/project.nvim" })
   use({ "lewis6991/impatient.nvim" })
   use({ "lukas-reineke/indent-blankline.nvim" })
@@ -83,6 +82,19 @@ return packer.startup(function(use)
   use({ "jose-elias-alvarez/null-ls.nvim" }) -- for formatters and linters
   use({ "wesleimp/stylua.nvim" })
   use({ "github/copilot.vim" })
+  use({
+    "jackMort/ChatGPT.nvim",
+    config = function()
+      require("chatgpt").setup({
+
+      })
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    }
+  })
 
   -- Telescope
   use({ "nvim-telescope/telescope.nvim", requires={ "nvim-lua/plenary.nvim" } })

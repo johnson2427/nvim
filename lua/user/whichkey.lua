@@ -84,6 +84,11 @@ local mappings = {
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["q"] = { "<cmd>qa<CR>", "Quit" },
+  g = {
+    name = "ChatGPT",
+    n = { "<cmd>ChatGPT<cr>", "New ChatGPT Session" },
+    e = { "<cmd>ChatGPTEditWithInstructions<cr>", "ChatGPT Edit" }
+  },
   f = {
     name = "Telescope",
     f = { "<cmd>lua require('telescope.builtin').find_files()<cr>", "Find Files" },
