@@ -51,15 +51,3 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
-
--- Debugger
--- keymap("n", "<Home>", ":lua require('dapui').open()<CR>", opts)
--- keymap("n", "<End>", ":lua require('dapui').toggle(1)<CR>", opts)
--- keymap("n", "<leader><End>", ":lua require('dapui').close()<CR>", opts)
--- keymap("n", "<Right>", ":lua require('dap').continue()<CR>", opts)
--- keymap("n", "<Up>", ":lua require('dap').step_over()<CR>", opts)
--- keymap("n", "<Down>", ":lua require('dap').step_into()<CR>", opts)
--- keymap("n", "<Left>", ":lua require('dap').step_out()<CR>", opts)
--- keymap("n", "<End>", ":lua require('dap').toggle(1)<CR>", opts)
--- keymap("n", "<leader>rc", ":lua require('dap').run_to_cursor()<CR>", opts)
-
