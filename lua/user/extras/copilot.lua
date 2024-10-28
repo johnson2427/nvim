@@ -13,7 +13,7 @@ function M.config()
       keymap = {
         jump_next = "<Down>",
         jump_prev = "<Up>",
-        accept = "<Tab>",
+        accept = "<Right>",
         refresh = "r",
         open = "<M-CR>",
       },
