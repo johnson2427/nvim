@@ -22,7 +22,7 @@ function M.config()
       enabled = true,
       auto_trigger = true,
       keymap = {
-        accept = "<Tab>",
+        accept = "<Right>",
         next = "<Down>",
         prev = "<Up>",
         dismiss = "<Left>",
